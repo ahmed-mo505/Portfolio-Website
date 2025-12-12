@@ -1,194 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Ahmed Mostafa</title>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="logo">Ahmed Mostafa</a>
-      <nav class="navigation">
-        <a href="#about-me">about me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ahmed Mostafa</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <meta name="description" content="Ahmed Mostafa — AI Engineer / Data Enthusiast. Portfolio showcasing projects and skills.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Ahmed<span class="dot">.</span></a>
+      <button id="hamburger" aria-label="menu" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+      <nav id="nav" class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#badges" class="nav-link">Badges</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link btn-cta">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="main">
-      <div>
-        <h2>Hello, I'm Ahmed<br /><span>AI Engineer</span></h2>
-        <h3>AI student || Interested in data science</h3>
-        <a href="#projects" class="main-btn">View my work</a>
-        <div class="social-icons">
-          <a href="https://linkedin.com/in/ahmed-mostafa-2b334b207"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/ahmed-mo505"
-            ><i class="fab fa-github"></i
-          ></a>
-        </div>
-      </div>
-    </section>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Hi — I'm <span>Ahmed Mostafa</span></h1>
+          <p class="lead">AI Engineer • Data Engineer — passionate about turning raw data into useful insights.</p>
+          <div class="hero-actions">
 
-    <section class="about-me" id="about-me">
-      <h2 class="title">About Me</h2>
-      <div class="brief">
-        <p>
-          I am currently studying Artificial Intelligence at the Egyptian
-          Russian University. with a solid foundation in programming and data
-          science, and I have achieved academic success. I have completed
-          various projects including a blood bank, a registration system,
-          sentiment analysis, machine learning projects, and more To consolidate
-          the concepts and knowledge acquired. I am passionate about working
-          with actual data to gain insights, create visualizations, and make
-          informed decisions. I am open to new opportunities and challenges in
-          Artificial Intelligence and Data Science.
-        </p>
-        <a
-          href="https://drive.google.com/file/d/1gwPmDDjRC7OdsUPic-6Hcvk76aolTfmX/view?usp=sharing"
-          class="cv-btn"
-          target="_blank"
-          >View My CV</a
-        >
-        <a
-          href="https://drive.google.com/file/d/1g1fJk6_ZYSY97KmCMp-avu-XhxdUi7VN/view?usp=sharing"
-          class="cert-btn"
-          target="_blank"
-          >View My Certificates</a
-        >
-      </div>
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>2002</h3>
-          <p>It's my first time on earth.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>2020</h3>
-          <p>
-            graduated from Al Azhar High School to join university life as an AI
-            student at the Egyptian Russian University.
-          </p>
-        </div>
-        <div class="timeline-item">
-          <h3>2024</h3>
-          <p>end of university life with B+.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <h2 class="title">Projects</h2>
-      <div class="content">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/Academic.jpg" />
           </div>
-          <div class="project-info">
-            <p class="project-category">
-              a website for enhancing the academic field in Egypt
-            </p>
-            <strong class="project-title">
-              <span>Website</span>
-              <a
-                href="https://github.com/ahmed-mo505/Academic-Linkup-API"
-                class="more-details"
-                >open in github</a
-              >
-            </strong>
+          <div class="social small">
+            <a href="https://linkedin.com/in/ahmed-mostafa-2b334b207" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ahmed-mo505" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/CNN model.jpg" />
-          </div>
-          <div class="project-info">
-            <p class="project-category">American Sign Language using CNN</p>
-            <strong class="project-title">
-              <span>CNN Model</span>
-              <a
-                href="https://github.com/ahmed-mo505/ASL-CNN"
-                class="more-details"
-                >open in github</a
-              >
-            </strong>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/3.jpeg" />
-          </div>
-          <div class="project-info">
-            <p class="project-category">Signature-Verification-using-CNN</p>
-            <strong class="project-title">
-              <span>CNN Model</span>
-              <a
-                href="https://github.com/ahmed-mo505/ASL-CNN"
-                class="more-details"
-                >open in github</a
-              >
-            </strong>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/4.jpeg" />
-          </div>
-          <div class="project-info">
-            <p class="project-category">Movie-Recommender using only Pandas</p>
-            <strong class="project-title">
-              <span>Pandas</span>
-              <a
-                href="https://github.com/ahmed-mo505/Movie-Recommender-using-Pandas"
-                class="more-details"
-                >open in github</a
-              >
-            </strong>
+        <div class="hero-right">
+          <div class="avatar-wrap">
+            <!-- Replace avatar.png in images/ -->
+            <img src="images/personal photo.jpg" alt="Ahmed Mostafa" class="avatar">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cards contact" id="contact">
-      <h2 class="title">Let's work together</h2>
-      <div class="content">
-        <div class="card">
-          <div class="icon">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="info">
-            <h3>Phone</h3>
-            <p>+201005412376</p>
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container split">
+        <div class="card about-card">
+          <h2>About Me</h2>
+          <p>I am a fresh graduate in Artificial Intelligence at the Egyptian Russian University. with a solid foundation in programming and data science, and I have achieved academic success. I also have experience volunteering and leading different project teams. I have completed various projects including a blood bank, a registration system, sentiment analysis, machine learning projects, and more To consolidate the concepts and knowledge acquired. I am passionate about working with actual data to gain insights, create visualizations, and make informed decisions. I am open to new opportunities and challenges in Artificial Intelligence and Data Science, and I am keen to further develop my skills.</p>
+          <div class="buttons">
+            <a class="btn" target="_blank" href="https://drive.google.com/file/d/1agpjJxGUF-UBOr1emveX_xQi0kaDORe0/view?usp=sharing">View CV</a>
+            <a class="btn btn-outline" target="_blank" href="https://drive.google.com/file/d/1wB_OlqW8pGeR50F0uASB0J8avQMz-a6l/view?usp=sharing">Certificates</a>
           </div>
         </div>
-        <div class="card">
-          <div class="icon">
-            <i class="fas fa-envelope"></i>
+        <div class="card timeline-card">
+          <h3>Timeline</h3>
+          <ul class="timeline-list">
+            <li><strong>2002</strong><span>Born</span></li>
+            <li><strong>2020</strong><span>Started AI studies — Egyptian Russian University</span></li>
+            <li><strong>2024</strong><span>Graduated — B+</span></li>
+            <li><strong>2025</strong><span>Completed military service</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-head"><i class="fa-solid fa-code"></i> python</div>
+            <div class="skill-body">NumPy . Pandas . scikit-learn . Django . API RestFramework</div>
           </div>
-          <div class="info">
-            <h3>Email</h3>
-            <p>off.ahmed.msotafa@gmail.com</p>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fa-solid fa-database"></i> Database</div>
+            <div class="skill-body">Microsoft SQL Server . SQLite . MySql . MongoDB</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fa-solid fa-database"></i> Data Analysis</div>
+            <div class="skill-body">Excel . Web Scraping . Power BI . ETL . data warehouse</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fa-solid fa-brain"></i> ML</div>
+            <div class="skill-body">regression . classification . clustering</div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-head"><i class="fa-solid fa-cloud"></i> Tools</div>
+            <div class="skill-body">Git · Docker · VS Code</div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <p class="footer-title">Copyrights @ <span>Ahmed Mostaaf</span></p>
-      <div class="social-icons">
-        <a href="https://linkedin.com/in/ahmed-mostafa-2b334b207"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/ahmed-mo505"
-          ><i class="fab fa-github"></i
-        ></a>
+<!-- BADGES -->
+<section id="badges" class="section light">
+  <div class="container">
+    <h2 class="section-title">Badges</h2>
+    <div class="badges-grid">
+      <!-- كل badge بقى داخل رابط -->
+      <a href="https://www.credly.com/badges/605e9753-cea5-4e9d-8bc2-aa4f5970367e" class="badge-card" target="_blank">
+        <img src="images/dslap.png" alt="Badge 1">
+        <h4>Applied Data Science Lab</h4>
+      </a>
+      <a href="https://www.credly.com/badges/be7e4fb9-55e7-451b-958f-60a5e27904f1" class="badge-card" target="_blank">
+        <img src="images/AWS.png" alt="Badge 2">
+        <h4>AWS Academy Graduate - Cloud Foundations</h4>
+      </a>
+      <a href="https://www.credly.com/badges/8d1a24ee-3cd8-49db-a159-f9b091892bfe" class="badge-card" target="_blank">
+        <img src="images/IBM1.png" alt="Badge 3">
+        <h4>IBM Artificial Intelligence Practitioner Certificate V2</h4>
+      </a>
+      <a href="https://www.credly.com/badges/cdb6cfb1-0af4-40a0-8138-1c3816b7baf1" class="badge-card" target="_blank">
+        <img src="images/IBM2.png" alt="Badge 4">
+        <h4>Data Analysis Using Python</h4>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project">
+            <div class="project-media">
+              <img src="images/Academic.jpg" alt="Academic Linkup">
+            </div>
+            <div class="project-body">
+              <h3>Academic Linkup</h3>
+              <p>a website for enhancing the academic field in Egypt</p>
+              <div class="proj-links">
+                <a href="https://github.com/ahmed-mo505/Academic-Linkup-API" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <div class="project-media">
+              <img src="images/CNN model.jpg" alt="ASL CNN">
+            </div>
+            <div class="project-body">
+              <h3>ASL Recognition (CNN)</h3>
+              <p>American Sign Language recognition using convolutional neural networks</p>
+              <div class="proj-links">
+                <a href="https://github.com/ahmed-mo505/ASL-CNN" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <div class="project-media">
+              <img src="images/3.jpeg" alt="Signature Verification">
+            </div>
+            <div class="project-body">
+              <h3>Signature Verification</h3>
+              <p>Signature verification using CNN techniques</p>
+              <div class="proj-links">
+                <a href="https://github.com/ahmed-mo505/ASL-CNN" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project">
+            <div class="project-media">
+              <img src="images/4.jpeg" alt="Movie Recommender">
+            </div>
+            <div class="project-body">
+              <h3>Movie Recommender</h3>
+              <p>Movie recommender built using only Pandas</p>
+              <div class="proj-links">
+                <a href="https://github.com/ahmed-mo505/Movie-Recommender-using-Pandas" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h2>Let's work together</h2>
+          <p>Reach me via email or phone — happy to collaborate on data & AI projects.</p>
+          <ul class="contact-list">
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+201005412376">+20 100 541 2376</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:off.ahmed.mostafa@gmail.com">off.ahmed.mostafa@gmail.com</a></li>
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/ahmed-mo505" target="_blank">github.com/ahmed-mo505</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ahmed Mostafa — All rights reserved</p>
+      <div class="social">
+        <a href="https://linkedin.com/in/ahmed-mostafa-2b334b207" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ahmed-mo505" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
