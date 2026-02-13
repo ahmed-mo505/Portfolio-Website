@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboards – Ahmed Mostafa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dashboards.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Portfolio<span class="dot">.</span></a>
+      <button id="hamburger" aria-label="menu" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+      <nav id="nav" class="nav">
+        <a href="index.html#home"     class="nav-link">Home</a>
+        <a href="index.html#about"    class="nav-link">About</a>
+        <a href="index.html#skills"   class="nav-link">Skills</a>
+        <a href="index.html#badges"   class="nav-link">Badges</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="dashboards.html"     class="nav-link active-page">Dashboards</a>
+        <a href="index.html#contact"  class="nav-link btn-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="db-hero">
+      <div class="container">
+        <div class="db-hero-content">
+          <span class="db-tag"><i class="fa-solid fa-chart-bar"></i> Power BI</span>
+          <h1>Data <span>Dashboards</span></h1>
+          <p>Interactive business intelligence reports built with Power BI — covering sales performance, market trends, and operational KPIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="db-section">
+      <div class="container">
+
+        <!-- ===== DASHBOARD 1: Bike Sales ===== -->
+        <article class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-meta">
+              <span class="db-badge-pill"><i class="fa-solid fa-bicycle"></i> Sales Analysis</span>
+              <h2>Bike Sales Dashboard</h2>
+              <p class="db-desc">
+                A comprehensive sales analysis dashboard for a bike retail business tracking <strong>1,465 orders</strong> with a total due of <strong>$33.93M</strong>. The report delivers a full view of business performance across four key visuals: monthly order trends revealing seasonal peaks, an order status breakdown (Approved 27% · In-Process 27% · Shipped 26% · Cancelled 9%), product category performance with Bikes leading at 1,200+ orders, and a territory revenue treemap spanning Canada, Northwest USA, UK, France, and Australia.
+              </p>
+              <div class="db-tags">
+                <span>Sales KPIs</span>
+                <span>Monthly Trends</span>
+                <span>Order Status</span>
+                <span>Product Mix</span>
+                <span>Territory Map</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="db-preview">
+            <img src="images/bike_sales.png" alt="Bike Sales Dashboard Preview" class="db-preview-img"/>
+          </div>
+
+          <div class="db-card-footer">
+            <div class="db-tools">
+              <span><i class="fa-solid fa-bolt"></i> Power BI</span>
+              <span><i class="fa-solid fa-file-excel"></i> Excel / CSV</span>
+              <span><i class="fa-solid fa-filter"></i> DAX</span>
+            </div>
+            <a class="db-btn-github" href="https://github.com/ahmed-mo505/Power-BI-project" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ===== DASHBOARD 2: AdventureWorks 3-page ===== -->
+        <article class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-meta">
+              <span class="db-badge-pill"><i class="fa-solid fa-trophy"></i> AdventureWorks 2022</span>
+              <h2>Sales Performance — AdventureWorks</h2>
+              <p class="db-desc">
+                A multi-page report powered by the <strong>AdventureWorks 2022</strong> SQL Server database, covering <strong>31K orders</strong>, <strong>$123.22M</strong> total due, and <strong>275K</strong> items shipped.
+                <br><br>
+                <strong>Page 1 — Overview:</strong> High-level KPIs with a daily order timeline (Ship Date vs Due Date), category breakdown (Accessories 20K · Bikes 18K · Clothing 10K), territory performance chart, and a 2011–2014 date slicer with region and shipping filters.
+                <br><br>
+                <strong>Page 2 — Territory Map:</strong> Global bubble map showing order volume by territory, regional group pie chart (North America 51% · Europe 27% · Pacific 22%), and shipping method comparison between XRQ Truck Ground and Cargo Transport 5.
+                <br><br>
+                <strong>Page 3 — Sales Persons:</strong> Top 10 salesperson ranking by total revenue — Linda Mitchell leads at $0.38bn — with full-name and shipping-method slicers for deep-dive analysis.
+              </p>
+              <div class="db-tags">
+                <span>SQL Server 2022</span>
+                <span>3-Page Report</span>
+                <span>Territory Map</span>
+                <span>Sales Ranking</span>
+                <span>DAX Measures</span>
+                <span>Date Slicer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="db-tabs">
+            <button class="db-tab active" onclick="switchTab(this,'tab-p1')">
+              <i class="fa-solid fa-table-columns"></i> Page 1 — Overview
+            </button>
+            <button class="db-tab" onclick="switchTab(this,'tab-p2')">
+              <i class="fa-solid fa-earth-americas"></i> Page 2 — Territory Map
+            </button>
+            <button class="db-tab" onclick="switchTab(this,'tab-p3')">
+              <i class="fa-solid fa-ranking-star"></i> Page 3 — Sales Persons
+            </button>
+          </div>
+
+          <div id="tab-p1" class="db-tab-content active">
+            <div class="db-preview">
+              <img src="images/sales_AdventureWorksDB.png" alt="AdventureWorks Overview" class="db-preview-img"/>
+            </div>
+          </div>
+          <div id="tab-p2" class="db-tab-content">
+            <div class="db-preview">
+              <img src="images/1.png" alt="AdventureWorks Territory Map" class="db-preview-img"/>
+            </div>
+          </div>
+          <div id="tab-p3" class="db-tab-content">
+            <div class="db-preview">
+              <img src="images/2.png" alt="AdventureWorks Sales Persons" class="db-preview-img"/>
+            </div>
+          </div>
+
+          <div class="db-card-footer">
+            <div class="db-tools">
+              <span><i class="fa-solid fa-bolt"></i> Power BI</span>
+              <span><i class="fa-solid fa-database"></i> SQL Server 2022</span>
+              <span><i class="fa-solid fa-filter"></i> DAX</span>
+              <span><i class="fa-solid fa-file-lines"></i> 3 Pages</span>
+            </div>
+            <a class="db-btn-github" href="https://github.com/ahmed-mo505/Power-BI-project" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- ===== DASHBOARD 3: day-3 ===== -->
+        <article class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-meta">
+              <span class="db-badge-pill"><i class="fa-solid fa-magnifying-glass-chart"></i> AdventureWorks 2022</span>
+              <h2>Advanced Analytics — AdventureWorks</h2>
+              <p class="db-desc">
+                An advanced single-page analytics report built on <strong>AdventureWorks 2022</strong>, surfacing <strong>31K orders</strong>, <strong>275K total quantity</strong>, and <strong>$123.22M</strong> total due across 6 headline KPI cards. The report features a combined daily timeline that overlays Ship Date, Due Date, and Order Count — giving a clear picture of fulfillment efficiency and bottlenecks. Additional visuals cover territory revenue performance, order status (Shipped dominates at 31K), product category split (Accessories · Bikes · Clothing · Components), and a detailed shipping method breakdown showing XRQ Truck Ground at 27.7K vs Cargo Transport 5 at 3.8K.
+              </p>
+              <div class="db-tags">
+                <span>SQL Server 2022</span>
+                <span>Fulfillment Tracking</span>
+                <span>Shipping Analysis</span>
+                <span>Custom DAX</span>
+                <span>KPI Cards</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="db-preview">
+            <img src="images/3.png" alt="Advanced Analytics Dashboard" class="db-preview-img"/>
+          </div>
+
+          <div class="db-card-footer">
+            <div class="db-tools">
+              <span><i class="fa-solid fa-bolt"></i> Power BI</span>
+              <span><i class="fa-solid fa-database"></i> SQL Server 2022</span>
+              <span><i class="fa-solid fa-filter"></i> DAX</span>
+            </div>
+            <a class="db-btn-github" href="https://github.com/ahmed-mo505/Power-BI-project" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ahmed Mostafa – All rights reserved</p>
+      <div class="social">
+        <a href="https://linkedin.com/in/ahmed-mostafa-2b334b207" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ahmed-mo505" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(btn, tabId) {
+      const card = btn.closest('.db-card');
+      card.querySelectorAll('.db-tab').forEach(t => t.classList.remove('active'));
+      card.querySelectorAll('.db-tab-content').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
