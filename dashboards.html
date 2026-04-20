@@ -231,6 +231,41 @@
           </div>
         </article>
 
+        <!-- ===== DASHBOARD 5: Sales Analysis ===== -->
+        <article class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-meta">
+              <span class="db-badge-pill"><i class="fa-solid fa-bicycle"></i> Sales Analysis</span>
+              <h2>Sales Analysis Dashboard</h2>
+              <p class="db-desc">
+                This dashboard provides a comprehensive sales analysis using key KPIs such as number of customers, orders, total revenue, and tax, along with insights into monthly trends, top-selling products, and geographic distribution. The data originally existed in a <strong>single flat table</strong>, so it was transformed into a <strong>Star Schema</strong> to improve performance and scalability. A <strong>Fact Table</strong> was created to store core measures like LineTotal and TotalDue, connected to multiple <strong>dimension tables</strong>. Dimensions such as Product, Customer, Territory, Date, and Status were separated to reduce redundancy and enhance data organization. After modeling, Power BI performance improved significantly, making it easier to build DAX measures and extract insights.
+              </p>
+              <div class="db-tags">
+                <span>Sales KPIs</span>
+                <span>Monthly Trends</span>
+                <span>Order Status</span>
+                <span>Product Mix</span>
+                <span>Territory Map</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="db-preview">
+            <img src="images/sales_analysis.png" alt="Sales Dashboard Preview" class="db-preview-img"/>
+          </div>
+
+          <div class="db-card-footer">
+            <div class="db-tools">
+              <span><i class="fa-solid fa-bolt"></i> Power BI</span>
+              <span><i class="fa-solid fa-file-excel"></i> Excel / CSV</span>
+              <span><i class="fa-solid fa-filter"></i> DAX</span>
+            </div>
+            <a class="db-btn-github" href="https://github.com/ahmed-mo505/Power-BI-project" target="_blank">
+              <i class="fa-brands fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
