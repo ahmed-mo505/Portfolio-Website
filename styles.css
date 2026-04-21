@@ -89,6 +89,21 @@ img { max-width: 100%; display: block; }
 }
 .hamburger:hover { background: rgba(214,179,112,0.12); }
 
+.dashboard-mobile {
+  display: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: background 0.2s;
+}
+
+.dashboard-mobile:hover {
+  background: var(--accent-2);
+}
+
 /* ── HERO ── */
 .hero { padding: 60px 0 48px; }
 .hero-grid {
@@ -397,10 +412,10 @@ img { max-width: 100%; display: block; }
   :root { --header-h: 58px; }
 
   /* Show hamburger */
-  .hamburger { display: flex; align-items: center; justify-content: center; }
+  /* .hamburger { display: flex; align-items: center; justify-content: center; } */
 
   /* Slide-in nav */
-  .nav {
+  /* .nav {
     position: fixed;
     right: 0;
     top: var(--header-h);
@@ -417,7 +432,15 @@ img { max-width: 100%; display: block; }
     overflow-y: auto;
     z-index: 99;
   }
-  .nav.show { transform: translateX(0); }
+  .nav.show { transform: translateX(0); } */
+
+  .nav {
+    display: none;
+  }
+    .dashboard-mobile {
+    display: inline-block;
+  }
+
   .nav-link {
     width: 100%;
     padding: 12px 14px;
