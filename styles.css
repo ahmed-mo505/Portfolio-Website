@@ -415,7 +415,7 @@ img { max-width: 100%; display: block; }
   /* .hamburger { display: flex; align-items: center; justify-content: center; } */
 
   /* Slide-in nav */
-  /* .nav {
+  .nav {
     position: fixed;
     right: 0;
     top: var(--header-h);
@@ -432,11 +432,11 @@ img { max-width: 100%; display: block; }
     overflow-y: auto;
     z-index: 99;
   }
-  .nav.show { transform: translateX(0); } */
+  .nav.show { transform: translateX(0); }
 
-  .nav {
+  /* .nav {
     display: none;
-  }
+  } */
     .dashboard-mobile {
     display: inline-block;
   }
