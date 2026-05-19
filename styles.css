@@ -64,6 +64,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.9rem;
   transition: background 0.2s, color 0.2s;
   white-space: nowrap;
+  position: relative;
 }
 .nav-link:hover { background: rgba(214,179,112,0.12); color: var(--accent-2); }
 .nav-link.btn-cta {
@@ -74,6 +75,56 @@ img { max-width: 100%; display: block; }
   margin-left: 4px;
 }
 .nav-link.btn-cta:hover { background: var(--accent-2); color: #fff; }
+
+/* ✨ Dashboards Sparkle Animation */
+.nav-sparkle {
+  animation: pulse-bounce 2s ease-in-out infinite;
+  background: linear-gradient(135deg, rgba(214,179,112,0.15), rgba(193,154,107,0.1));
+  box-shadow: 0 0 15px rgba(214,179,112,0.3);
+}
+
+.nav-sparkle::before,
+.nav-sparkle::after {
+  content: '✨';
+  position: absolute;
+  font-size: 0.9rem;
+  opacity: 0;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.nav-sparkle::before {
+  top: -8px;
+  right: -8px;
+  animation-delay: 0.3s;
+}
+
+.nav-sparkle::after {
+  bottom: -8px;
+  left: -8px;
+  animation-delay: 0.8s;
+}
+
+@keyframes pulse-bounce {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(214,179,112,0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(214,179,112,0.5);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-3px) scale(1);
+  }
+}
 
 /* HAMBURGER */
 .hamburger {
@@ -448,6 +499,12 @@ img { max-width: 100%; display: block; }
     border-radius: 10px;
   }
   .nav-link.btn-cta { margin-left: 0; margin-top: 8px; text-align: center; justify-content: center; }
+
+  /* Hide sparkles on mobile */
+  .nav-sparkle::before,
+  .nav-sparkle::after {
+    display: none;
+  }
 
   /* Hero: stack vertically, image first on mobile */
   .hero { padding: 36px 0 32px; }

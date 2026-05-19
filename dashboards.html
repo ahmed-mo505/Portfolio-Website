@@ -437,6 +437,63 @@
           </div>
         </article>
 
+        <!-- ===== DASHBOARD: Tableau Sales Analysis ===== -->
+        <article class="db-card">
+          <div class="db-card-header">
+            <div class="db-card-meta">
+              <span class="db-badge-pill"><i class="fa-solid fa-chart-line"></i> Tableau Public</span>
+              <h2>Sales Performance Analysis — Tableau</h2>
+              <p class="db-desc">
+                A two-page interactive Tableau dashboard analyzing retail sales data across <strong>5 product categories</strong> with total sales of <strong>$1,283,799</strong> and profit of <strong>$641,826</strong>.
+                <br><br>
+                <strong>Overview Page:</strong> Six KPI cards (Sales, Profit, AVG Cost Price, AVG Age, Total Quantity, AVG Discount), a bubble chart for cost price per category, a horizontal bar chart for total sales by category, a US map showing average discount per state, and a treemap for profit over region (Midwest leads at $153,911).
+                <br><br>
+                <strong>Deep Analysis Page:</strong> A combo bar-line chart showing total sales & average discount over category, a ranked horizontal bar for sales by category, a profit status breakdown (High Profit 3,977 · Low Profit 1,962 · No Profit 196), a TOP N customer table by order count (Henry Parker leads at 127 orders), a count-of-sales bar chart, and a donut chart for profit over customer segment.
+              </p>
+              <div class="db-tags">
+                <span>Tableau Public</span>
+                <span>Sales KPIs</span>
+                <span>Geographic Map</span>
+                <span>Customer Segmentation</span>
+                <span>Profit Analysis</span>
+                <span>TOP N Filter</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="db-tabs">
+            <button class="db-tab active" onclick="switchTab(this,'tab-tableau-overview')">
+              <i class="fa-solid fa-table-columns"></i> Overview
+            </button>
+            <button class="db-tab" onclick="switchTab(this,'tab-tableau-deep')">
+              <i class="fa-solid fa-magnifying-glass-chart"></i> Deep Analysis
+            </button>
+          </div>
+
+          <div id="tab-tableau-overview" class="db-tab-content active">
+            <div class="db-preview">
+              <img src="images/tableau1.png" alt="Sales Performance Analysis - Overview" class="db-preview-img"/>
+            </div>
+          </div>
+          <div id="tab-tableau-deep" class="db-tab-content">
+            <div class="db-preview">
+              <img src="images/tableau2.png" alt="Deep Performance Analysis" class="db-preview-img"/>
+            </div>
+          </div>
+
+          <div class="db-card-footer">
+            <div class="db-tools">
+              <span><i class="fa-solid fa-chart-bar"></i> Tableau</span>
+              <span><i class="fa-solid fa-map-location-dot"></i> Geographic Map</span>
+              <span><i class="fa-solid fa-filter"></i> Calculated Fields</span>
+              <span><i class="fa-solid fa-file-excel"></i> Excel / CSV</span>
+            </div>
+            <a class="db-btn-github" href="https://public.tableau.com/shared/SFRBN9Z7R?:display_count=n&:origin=viz_share_link" target="_blank" style="background:#1d6fa4;">
+              <i class="fa-solid fa-chart-bar"></i> View on Tableau Public
+            </a>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
